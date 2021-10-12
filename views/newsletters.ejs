@@ -1,0 +1,10 @@
+<h2 class="text-center">NEWSLETTERS</h2>
+<% newsletters.forEach((e) => { %>
+<a
+  class="navbar nav"
+  style="text-decoration: none"
+  href="/newsletters/<%= e.id %>"
+  ><h2><%= e.title %></h2></a
+>
+<p><%= e.body %></p>
+<% }) %>
